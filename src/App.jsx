@@ -6,17 +6,17 @@ import { ThemeProvider } from "styled-components";
 import { useState } from "react";
 
 import Header from "./Header";
-import Slogun from "./Slogun";
 import Footer from "./Footer";
 
 import { Routes, Route } from "react-router-dom";
 import ShowPostList from "./ShowPostList";
+import PageUserMain from "./PageUserMain";
 import ShowPost from "./ShowPost";
 import WritePost from "./WritePost";
 
 const API_URL = "https://reactapitest.pythonanywhere.com/api/";
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <>
@@ -25,13 +25,11 @@ function App() {
         <GlobalStyles />
         {/* 솔직히 지 금까지 다 알겠는데 MediaDiv는 뭔지 모르겠음. */}
         <MediaDiv>
-          {/* Header, Main, Slogun은 아무래도 공통된애들이니까 memo로 리렌더링 안되게 해둔거임 */}
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Main>
-            {/* slogun 이해함. section안에 2개의 컴포넌트가 있음. 둘 다 스타일드 컴포넌트였음! */}
-            <Slogun />
             <Routes>
-              <Route exact path="/" element={<ShowPostList apiUrl={API_URL} />}></Route>
+              <Route exact path="/1" element={<PageUserMain apiUrl={API_URL} />}></Route>
+              <Route exact path="/2" element={<PageUserMain apiUrl={API_URL} />}></Route>
               <Route path="/write" element={<WritePost apiUrl={API_URL} />}></Route>
               <Route path="/post/:postID" element={<ShowPost apiUrl={API_URL} />}></Route>
             </Routes>

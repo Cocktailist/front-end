@@ -1,76 +1,166 @@
 import styled from "styled-components";
 
 export const MediaDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+
   margin: 0px auto;
   min-height: 100vh;
-  width: 768px;
+  width: 7610px;
   color: ${(props) => props.theme.fontColor};
   background-color: ${(props) => props.theme.bgColor};
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 7610px) {
     width: 100%;
   }
 `;
+
+/** Header */
 export const HeaderDiv = styled.div`
-  width: 768px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HeaderContent = styled.div`
+  padding-top: 10px;
+  width: 7610px;
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Black Han Sans", sans-serif;
-  position: absolute;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 7610px) {
     width: 100%;
   }
 `;
 
-export const TitleLogoDiv = styled.div`
+export const CrossLine = styled.div`
+  margin-top: 6px;
+  width: 100%;
+  height: 6px;
+  background-color: rgb(246, 246, 246);
+`;
+
+export const TitleLogo = styled.img`
+  height: 20px;
+`;
+
+export const TitleDiv = styled.div`
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(131, 66, 213);
+`;
+
+/** Main */
+export const Main = styled.div`
+  flex: 1;
+`;
+
+/** 1.PageUserMain */
+export const UserMainSection = styled.div`
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const LocationBox = styled.div`
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 20px;
+  // width: 100%;
+  // width: 10410px;
+  // height: 151px;
+`;
+
+/** Container flex-column  */
+export const TodayCocktailBarSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px;
-  line-height: 1;
 `;
 
-export const TitleBig = styled.span`
-  font-size: 40px;
-`;
-
-export const TitleSmall = styled.span`
-  font-size: 20px;
-`;
-
-export const SubHeaderDiv = styled.div`
-  margin: 15px;
-  font-size: 25px;
+/** Container flex-row (space between) */
+export const TodayCocktailBarHeader = styled.div`
   display: flex;
   flex-direction: row;
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
 `;
 
-export const Main = styled.div`
-  padding-top: 90px;
+export const TextMedium = styled.div`
+  font-family: "GmarketSansMedium";
+  font-size: ${(props) => props.size || "15px"};
+  color: ${(props) => props.color || "black"};
 `;
 
-export const SlogunSection = styled.div`
+export const TextLight = styled.div`
+  font-family: "GmarketSansLight";
+  font-size: ${(props) => props.size || "15px"};
+  color: ${(props) => props.color || "black"};
+`;
+
+export const TodayCocktailBarImg = styled.img`
+  max-width: 100%;
+  max-height: 175px;
+  width: auto;
+  height: auto;
+`;
+
+export const TodayCocktailBarStoreSection = styled.div`
   margin-top: 10px;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const TodayCocktailBarTagSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+`;
+
+export const TodayCocktailBarTag = styled.div`
+  border: 1px solid rgb(246, 246, 246);
+  font-size: 13px;
+  padding: 2px 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-width: 1px;
+  border-color: rgb(246, 246, 246);
+  border-style: solid;
+  background-color: rgb(131, 66, 213);
+  color: white;
+  font-family: "GmarketSansLight";
+
+  display: flex;
+  align-items: center;
+`;
+
+export const TrendingPostSection = styled.div`
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const SlogunBig = styled.span`
-  font-size: 40px;
-  font-family: "League Gothic", sans-serif;
+export const TrendingPostHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
 `;
 
-export const SlogunSmall = styled.span`
-  margin: 3px;
-  font-weight: bold;
-  color: #f39926;
-`;
+export const TrendingPostLists = styled.ul``;
+
 export const PostSection = styled.div`
   margin: 0px auto;
   margin-top: 20px;
@@ -142,21 +232,7 @@ export const PagenumberDiv = styled.div`
   border: 1px solid #f39926;
   border-radius: 5px;
 `;
-export const FooterDiv = styled.div`
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-export const FooterBig = styled.span`
-  margin: 5px;
-  font-size: 12px;
-`;
-export const FooterSmall = styled.span`
-  margin: 5px;
-  font-size: 5px;
-`;
+
 export const CursorDiv = styled.div`
   cursor: pointer;
 `;
@@ -242,4 +318,44 @@ export const PostSubmit = styled.div`
   font-family: "Black Han Sans", sans-serif;
   font-size: 20px;
 `;
-// export default MediaDiv;
+
+/** Footer */
+export const FooterDiv = styled.div`
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const FooterIcon = styled.img`
+  height: 25px;
+`;
+
+/** TrendingPost */
+
+export const PostingHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+export const UserImg = styled.div`
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border-radius: 10px;
+`;
+
+export const PostingMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+`;

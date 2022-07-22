@@ -1,21 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { CursorDiv, LoadingDiv, LoadingImg } from "./styledComponent";
-import {
-  PagenumberDiv,
-  PagingSection,
-  PostListDiv,
-  PostSection,
-  PostTitle,
-  PostTitleDiv,
-} from "./styledComponent";
+import { PagenumberDiv, PagingSection, PostListDiv, PostSection, PostTitle, PostTitleDiv } from "./styledComponent";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowsRotate,
-  faPenToSquare,
-  faArrowLeft,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowsRotate, faPenToSquare, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import loadingIcon from "./loading.svg";
 import EachPost from "./EachPost";
@@ -94,11 +82,8 @@ const ShowPostList = ({ apiUrl }) => {
           ) : (
             <ul>
               {postList.map((element) => (
-                <EachPost
-                  key={element.id}
-                  title={element.title}
-                  postID={element.id}
-                />
+                <></>
+                // <EachPost key={element.id} title={element.title} postID={element.id} />
               ))}
             </ul>
           )}

@@ -1,24 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { EachPostLi, PostLink } from "./styledComponent";
+import { PostLink, TextMedium } from "./styledComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 
-function EachPost({ title, postID }) {
+function TrendingPost({ userImg, userName, board, date, title, content }) {
   const navigate = useNavigate();
 
-  const goPost = () => {
-    navigate(`${"/post/" + postID}`);
-  };
+  // const goPost = () => {
+  //   navigate(`${"/post/" + postID}`);
+  // };
 
   return (
-    <EachPostLi onClick={goPost}>
-      <div>
-        <FontAwesomeIcon icon={faLocationPin} />
-        <PostLink>{title}</PostLink>
-      </div>
-    </EachPostLi>
+    <>
+      {/* <PostingHeader>
+        <UserImg></UserImg>
+        <TextMedium>{userName}</TextMedium>
+        <TextLight>{board}</TextLight>
+        <TextLight>{date}</TextLight>
+      </PostingHeader>
+      <PostingMain>
+        <TextMedium size="16.7px">{title}</TextMedium>
+        <TextLight>{content}</TextLight>
+      </PostingMain> */}
+    </>
   );
 }
 
-export default EachPost;
+export default TrendingPost;

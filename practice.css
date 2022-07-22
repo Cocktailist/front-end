@@ -1,0 +1,365 @@
+._2_유저메인 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1170px;
+  height: 2532px;
+  z-index: 259;
+}
+.레이어_2 {
+  background-image: url("레이어 2.png");
+  position: absolute;
+  left: 54px;
+  top: 496px;
+  width: 1062px;
+  height: 708px;
+  z-index: 258;
+}
+.사각형_1 {
+  border-width: 1px;
+  border-color: rgb(246, 246, 246);
+  border-style: solid;
+  background-color: rgb(133, 132, 132);
+  position: absolute;
+  left: 59px;
+  top: 606px;
+  width: 1049px;
+  height: 526px;
+  z-index: 257;
+}
+.more {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(131, 66, 213);
+  line-height: 1.067;
+  text-align: center;
+  position: absolute;
+  left: 938px;
+  top: 1417.993px;
+  z-index: 255;
+}
+.more {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(131, 66, 213);
+  line-height: 1.067;
+  text-align: center;
+  position: absolute;
+  left: 938px;
+  top: 519.992px;
+  z-index: 253;
+}
+.타원_1_복사 {
+  background-image: url("타원 1 복사.png");
+  position: absolute;
+  left: 60px;
+  top: 1939px;
+  width: 109px;
+  height: 98px;
+  z-index: 252;
+}
+.안녕하세욤_인기글_본문영역입니당_안녕하세용_인기글_본문영역입니당_ {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(0, 0, 0);
+  line-height: 1.444;
+  text-align: left;
+  position: absolute;
+  left: 56px;
+  top: 2217.59px;
+  z-index: 251;
+}
+.실시간_인기글_제목 {
+  font-size: 50px;
+  font-family: "GmarketSansMedium";
+  color: rgb(0, 0, 0);
+  line-height: 0.96;
+  text-align: left;
+  position: absolute;
+  left: 58.094px;
+  top: 2125.2px;
+  z-index: 250;
+}
+.나눔_게시판 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(150, 150, 150);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 367px;
+  top: 2011.96px;
+  z-index: 249;
+}
+._22_07_01 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(185, 185, 185);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 924.766px;
+  top: 1964.5px;
+  z-index: 248;
+}
+.닉네임 {
+  font-size: 50px;
+  font-family: "GmarketSansMedium";
+  color: rgb(0, 0, 0);
+  line-height: 0.96;
+  text-align: center;
+  position: absolute;
+  left: 177px;
+  top: 2010.2px;
+  z-index: 247;
+}
+.타원_1 {
+  background-image: url("타원 1.png");
+  position: absolute;
+  left: 60px;
+  top: 1528px;
+  width: 109px;
+  height: 98px;
+  z-index: 246;
+}
+.안녕하세욤_인기글_본문영역입니당_안녕하세용_인기글_본문영역입니당_ {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(0, 0, 0);
+  line-height: 1.444;
+  text-align: left;
+  position: absolute;
+  left: 56px;
+  top: 1806.59px;
+  z-index: 240;
+}
+.실시간_인기글_제목 {
+  font-size: 50px;
+  font-family: "GmarketSansMedium";
+  color: rgb(0, 0, 0);
+  line-height: 0.96;
+  text-align: left;
+  position: absolute;
+  left: 58.094px;
+  top: 1714.2px;
+  z-index: 239;
+}
+.아이디어_게시판 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(150, 150, 150);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 368px;
+  top: 1600.96px;
+  z-index: 238;
+}
+#시그니처칵테일 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 670.484px;
+  top: 1302.96px;
+  z-index: 237;
+}
+.사각형_2_복사_2 {
+  border-width: 1px;
+  border-color: rgb(246, 246, 246);
+  border-style: solid;
+  background-color: rgb(131, 66, 213);
+  position: absolute;
+  left: 643px;
+  top: 1245px;
+  width: 354px;
+  height: 64px;
+  z-index: 236;
+}
+#데이트코스 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 356.484px;
+  top: 1302.991px;
+  z-index: 235;
+}
+.사각형_2_복사 {
+  border-width: 1px;
+  border-color: rgb(246, 246, 246);
+  border-style: solid;
+  background-color: rgb(131, 66, 213);
+  position: absolute;
+  left: 332px;
+  top: 1245px;
+  width: 275px;
+  height: 64px;
+  z-index: 234;
+}
+#관람차뷰 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 83.484px;
+  top: 1303.96px;
+  z-index: 233;
+}
+.사각형_2 {
+  border-width: 1px;
+  border-color: rgb(246, 246, 246);
+  border-style: solid;
+  background-color: rgb(131, 66, 213);
+  position: absolute;
+  left: 60px;
+  top: 1245px;
+  width: 234px;
+  height: 64px;
+  z-index: 232;
+}
+.동성로_술집_황홀한_대구_야경_칵테일 {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(150, 150, 150);
+  line-height: 1.067;
+  text-align: left;
+  position: absolute;
+  left: 233.766px;
+  top: 1218.073px;
+  z-index: 231;
+}
+.도파민 {
+  font-size: 50px;
+  font-family: "GmarketSansMedium";
+  color: rgb(0, 0, 0);
+  line-height: 0.96;
+  text-align: center;
+  position: absolute;
+  left: 54.203px;
+  top: 1219.2px;
+  z-index: 230;
+}
+._22_07_01 {
+  font-size: 40px;
+  font-family: "GmarketSansLight";
+  color: rgb(185, 185, 185);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 924.766px;
+  top: 1553.5px;
+  z-index: 229;
+}
+.닉네임 {
+  font-size: 50px;
+  font-family: "GmarketSansMedium";
+  color: rgb(0, 0, 0);
+  line-height: 0.96;
+  text-align: center;
+  position: absolute;
+  left: 177px;
+  top: 1599.2px;
+  z-index: 228;
+}
+.실시간_인기글 {
+  font-size: 55px;
+  font-family: "GmarketSansMedium";
+  color: rgb(131, 66, 213);
+  line-height: 0.873;
+  text-align: center;
+  position: absolute;
+  left: 60.937px;
+  top: 1464.313px;
+  z-index: 227;
+}
+.firstText {
+  font-size: 55px;
+  font-family: "GmarketSansMedium";
+  color: rgb(131, 66, 213);
+  line-height: 0.873;
+  text-align: center;
+  position: absolute;
+  left: 57.328px;
+  top: 565.313px;
+  z-index: 226;
+}
+.어디에_계세요_ ~ __ {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(133, 132, 132);
+  line-height: 1.067;
+  text-align: center;
+  position: absolute;
+  left: 105px;
+  top: 417.073px;
+  z-index: 225;
+}
+.Rectangle_1_복사 {
+  background-color: rgb(246, 246, 246);
+  position: absolute;
+  left: -3px;
+  top: 1345px;
+  width: 1275px;
+  height: 18px;
+  z-index: 224;
+}
+.모서리가_둥근_직사각형_4_copy {
+  border-width: 1px;
+  border-color: rgb(176, 176, 176);
+  border-style: solid;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 60px;
+  top: 316px;
+  width: 1048px;
+  height: 151px;
+  z-index: 223;
+}
+
+.어디에_계세요_ ~ __ {
+  font-size: 45px;
+  font-family: "GmarketSansLight";
+  color: rgb(133, 132, 132);
+  line-height: 1.067;
+  text-align: center;
+  position: absolute;
+  justify-content: flex-start;
+  left: 105px;
+  top: 417.073px;
+  z-index: 225;
+  line-height: 1;
+  justi
+}
+
+.어디에_계세요_ ~ __ {
+  text-align: center;
+  position: absolute;
+  left: 105px;
+  top: 417.073px;
+  z-index: 225;
+}
+
+.hhhhh {
+  line-height: 1.067;
+  font-size: 45px;
+  color: rgb(133, 132, 132);
+  border-width: 1px;
+  border-color: rgb(176, 176, 176);
+  border-style: solid;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 60px;
+  top: 316px;
+  width: 1048px;
+  height: 151px;
+  z-index: 223;
+}

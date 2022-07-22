@@ -5,47 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./practice.css">
   <style>
-    * {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      /* box-sizing: border-box; */
-      border-color: inherit;
-    }
-
-    body {
-      width: 100vw;
-      height: 100vh;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      font-size: 100%;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 1;
-      margin: 0;
-      padding: 0;
-    }
-
     .container {
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-      width: 300px;
-      height: 500px;
-      padding: 10px;
-
-      border: 1px solid black;
-
     }
 
-    .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 300px;
+    .content {
+      background-color: aqua;
+      flex: 1;
+    }
+
+    .footer {
+      background-color: yellowgreen;
     }
   </style>
   <title>Document</title>
@@ -55,12 +29,25 @@
 
   <div class="container">
     <div class="header">
-      <p class="barTitle">오늘의 추천 칵테일바</p>
-      <p class="moreInfo">more</p>
+      <p>this is header</p>
+      <p>this is header</p>
+      <p>this is header</p>
     </div>
-    <img src="" alt="" class="barImg">
-    <div class="barInfo"></div>
-    <div class="barTag"></div>
+    <div class="content">
+      <p>this is content</p>
+      <p>this is content</p>
+      <p>this is content</p>
+    </div>
+    <div class="footerAbove">
+      <p>this is footerAbove</p>
+      <p>this is footerAbove</p>
+      <p>this is footerAbove</p>
+    </div>
+    <div class="footer">
+      <p>this is footer</p>
+      <p>this is footer</p>
+      <p>this is footer</p>
+    </div>
   </div>
 
 </body>
