@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../a.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">알림</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          주문이 완료 되었습니다!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ㅁㄴㅇㅁㄴㅇ -->
+  <div class="header">
+    <img src="../static/back_i.png" style="width: 10px; padding-left: 30px; display: inline;"
+      onclick="window.history.go(-1); return false;" alt="">
+    <p
+      style="font-family: Playfair Display; font-weight:900 ; display: inline; font-size: 25px; margin-left: 80px; color:rgb(131, 66, 213)">
+      CocktailBar</p>
+  </div>
+  <hr style="border: solid 3px rgb(247, 247, 247); margin-left: -10px; width: 380px;">
+
+  <div>
+    <img src="../static/mojito.PNG" style="width: 260px; margin-left: 60px; margin-top: 5px;" alt="">
+  </div>
+  <hr style="border: solid 3px rgb(247, 247, 247); margin-left: -10px; width: 500px;">
+
+  <div style="margin-left: 20px;">
+    <p style="font-family: GmarketSansMedium; font-size: 20px;margin-left: 5px; margin-top: 30px; display: inline; ">
+      모히또</p>
+    <p class="young"
+      style="padding: 2px; font-size: 15px; font-family: GmarketSansMedium; display: inline; margin-left: 6px;">
+      도수 15도</p>
+    <br>
+    <p style="margin-left: 5px; color: rgb(206, 206, 206) ;font-family: GmarketSansMedium;">Mojito</p>
+    <p style="font-family: GmarketSansMedium; margin-left: 5px; margin-top: 15px; display: inline;">럼 / 민트 / 라임 /
+      설탕시럽</p>
+    <p style="font-family: GmarketSansLight;">모히토(스페인어: mojito)는 럼 기반 하이볼로, <br>
+      쿠바 아바나가 발상지이다. <br>
+      미국의 소설가이자 저널리스트였던 어니스트<br>
+      헤밍웨이가 즐겨 마셨던 것으로 유명하다.
+      <br><br>
+      모히토는 화이트 럼, 라임주스, 민트잎, 설탕, <br>소다수를
+      섞어서 만든 술로, 먼저 민트잎을 <br>설탕과 라임주스와 함께
+      섞어야 한다. <br>
+    </p>
+    <p style="font-family:GmarketSansMedium; font-size: 20px;">10,000원</p>
+  </div>
+  <!-- <div style="margin-left: -120px;width:500px; height:70px; background-color: rgb(131, 66, 213);"> -->
+  <div class="container" style="margin-top: -70px;">
+
+    <a class="btn js-click-modal" style="text-align: center; font-family:GmarketSansMedium;">
+
+      주문하기</a>
+    <!-- modal -->
+    <img id="customModal" class="customModal" src="../static/customModal.png" alt="asdfasdfasdfa">
+    <div class="modal">
+      <p style="font-family: GmarketSansMedium; font-size: 20px;">모히또</p>
+      <div class="header"></div>
+      <div class="body">
+        <img src="../static/option.png" style="width: 20px;" alt="">
+        <p style="font-family: GmarketSansMedium;  display: inline;">퍼스널 옵션</p> <br> <br>
+        <div class="header"></div>
+
+        <br>
+        <p style="font-family: GmarketSansLight; font-size: 20px; display: inline; margin-right: 25px;"> 샷 추가
+        </p>
+        <input type='button' style="display: inline; " onclick='count("minus")' value='-' />
+        <div id='result' style="display: inline;">0</div>
+        <input type='button' style="display: inline;" onclick='count("plus")' value='+' /> <br><br>
+        <div class="header"></div>
+        <br>
+
+
+        <p style="font-family: GmarketSansLight; font-size: 20px; display: inline; margin-right: 25px;"> 라임
+        </p>
+        <input type='button' style="display: inline; " onclick='count2("minus")' value='-' />
+        <div id='result2' style="display: inline;">0</div>
+        <input type='button' style="display: inline;" onclick='count2("plus")' value='+' /> <br><br>
+        <div class="header"></div>
+        <br>
+
+        <p style="font-family: GmarketSansLight; font-size: 20px; display: inline; margin-right: 25px;"> 설탕 추가
+        </p>
+        <input type='button' style="display: inline; " onclick='count3("minus")' value='-' />
+        <div id='result3' style="display: inline;">0</div>
+        <input type='button' style="display: inline;" onclick='count3("plus")' value='+' /> <br><br>
+        <div class="header"></div>
+        <br>
+
+        <p style="font-family: GmarketSansLight; font-size: 20px; display: inline; margin-right: 25px;"> 민트잎
+        </p>
+        <input type='button' style="display: inline; " onclick='count4("minus")' value='-' />
+        <div id='result4' style="display: inline;">0</div>
+        <input type='button' style="display: inline;" onclick='count4("plus")' value='+' /> <br><br>
+        <div class="header"></div>
+        <br><br>
+
+        <a class="btn js-close-modal" style="border-radius: 10px;">
+          <p style="font-family: GmarketSansMedium;">닫기</p>
+        </a>
+
+        <a class="btn js-close-modal" style="border-radius: 10px;" onclick='openModal()'>
+          <p style="font-family: GmarketSansMedium;">주문하기</p>
+        </a>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- </div> -->
+
+  <div class="row">
+    <div class="col" style="margin-top: -35px ; margin-left: 37px;">
+      <img src="../static/nav_i01.png" style="width: 25px; margin-right: 58px;" alt="">
+      <a href="../cocktionary"><img src="../static/nav_i02.png" style="width: 23px;margin-right: 58px;" alt=""></a>
+      <a href="../cocktionary"><img src="../static/nav_i03.png" style="width: 19px;margin-right: 58px;" alt=""></a>
+      <img src="../static/nav_i04.png" style="width: 25px;margin-right: 58px;" alt="">
+    </div>
+
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="../index.js"></script>
+
+
+</body>
+
+</html>

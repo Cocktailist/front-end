@@ -3,7 +3,7 @@ import { HeaderContent, CrossLine, HeaderDiv, TitleLogo, TitleDiv } from "./styl
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
-import IconBack from "./images/back_i.png";
+import IconBack from "./static/back_i.png";
 
 function Header({ darkMode, setDarkMode }) {
   const toggleDarkMode = () => {

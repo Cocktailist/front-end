@@ -3,54 +3,14 @@ import { LocationBox, UserMainSection, TodayCocktailBarSection, TodayCocktailBar
 import { TrendingPostSection, TrendingPostHeader, TrendingPostLists } from "./styledComponent";
 import { CrossLine } from "./styledComponent";
 
-import cocktailbarImg from "./images/cocktailbar_image.png";
+import cocktailbarImg from "./static/cocktailbar_image.png";
 import TrendingPost from "./TrendingPost";
 
 import loadingIcon from "./loading.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 const PageUserMain = ({ apiUrl }) => {
-  const [loading, setLoading] = useState(true);
-  const [postList, setPostList] = useState([]);
-  const [page, setPage] = useState(1);
-  const [pages, setPages] = useState([]);
-
-  // useCallback 추가
-  // const addPost = useCallback(() => {
-  //   // ... 앞에 있는 postList 이후에 추가되도록
-  //   setPostList((postList) => [
-  //     ...postList,
-  //     { id: 4, title: "학보, 시사N, 대학기자상 취재" },
-  //   ]);
-  // }, [postList]);
-
-  const navigate = useNavigate();
-  const goWrite = () => {
-    navigate("/write");
-  };
-
-  const getPostList = useCallback(() => {
-    setLoading(true);
-    // setTimeout(() => {
-    //   setPostList(initialPostList);
-    //   setLoading(false);
-    // }, 600);
-    axios.get(`${apiUrl}list/?page=${page}&page_size=10`).then((response) => {
-      console.log(response.data);
-      const lastPage = Math.ceil(response.data.count / 10);
-      const tempPages = [];
-      for (let i = 1; i <= lastPage; i++) {
-        tempPages.push(i);
-      }
-      setPages(tempPages); // 페이지 갯수 계산 후 업데이트
-
-      //setPostList(initialPostList);
-      setPostList(response.data.results);
-      setLoading(false);
-    });
-  });
-
   /** 더미데이터들 */
   const cocktailbar = "도파민";
   const cocktailbarDesc = "동성로 술집 황홀한 대구 야경 칵테일";
@@ -59,9 +19,10 @@ const PageUserMain = ({ apiUrl }) => {
     { id: 1, userImg: "", userName: "피에르앙리", board: "아이디어 게시판", date: "2022-07-22", title: "이거 맛없으면 500만원", content: "오늘은 오랜만에 칵테일을 주조해보았다. 친구가 저번에 먹다 남은 보드카를 활용해 만들었다." },
     { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
     { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
+    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
+    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
+    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
   ];
-
-  useEffect(getPostList, [page]);
 
   // TODO: LocaionBox를 styledComponents 에서 개발이 가능한지 모르겠다.
   return (
@@ -77,7 +38,9 @@ const PageUserMain = ({ apiUrl }) => {
               more+
             </TextLight>
           </TodayCocktailBarHeader>
-          <TodayCocktailBarImg src={cocktailbarImg} />
+          <a href="./roro/cocktailbar_detail.html">
+            <TodayCocktailBarImg src={cocktailbarImg} />
+          </a>
           <TodayCocktailBarStoreSection>
             <TextMedium size="16.7px">{cocktailbar}</TextMedium>
             <TextLight size="15px">{cocktailbarDesc}</TextLight>

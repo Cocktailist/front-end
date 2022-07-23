@@ -42,11 +42,13 @@ export const CrossLine = styled.div`
 
 export const TitleLogo = styled.img`
   height: 20px;
+  margin-top: 5px;
 `;
 
 export const TitleDiv = styled.div`
   font-size: 25px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
   color: rgb(131, 66, 213);
 `;
 
@@ -91,12 +93,14 @@ export const TodayCocktailBarHeader = styled.div`
 `;
 
 export const TextMedium = styled.div`
+  margin-bottom: 10px;
   font-family: "GmarketSansMedium";
   font-size: ${(props) => props.size || "15px"};
   color: ${(props) => props.color || "black"};
 `;
 
 export const TextLight = styled.div`
+  margin-bottom: 5px;
   font-family: "GmarketSansLight";
   font-size: ${(props) => props.size || "15px"};
   color: ${(props) => props.color || "black"};
@@ -358,4 +362,12 @@ export const PostingMain = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
+`;
+
+export const IMG = styled.img`
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  margin: 10px 0px;
 `;

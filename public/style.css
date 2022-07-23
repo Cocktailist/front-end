@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=League+Gothic&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+}
+
+.young {
+  height: 70px;
+  width: 600px;
+  border: 1.5px solid rgb(131, 66, 213);
+  border-radius: 15px;
+  color: rgb(131, 66, 213);
+}
+
+.customModal {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: calc(844px / 2 - 66px);
+  left: calc(380px / 2 - 87.5px);
+  display: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dismiss {
+  display: block;
+}

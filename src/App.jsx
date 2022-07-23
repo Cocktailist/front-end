@@ -9,10 +9,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import { Routes, Route } from "react-router-dom";
-import ShowPostList from "./ShowPostList";
 import PageUserMain from "./PageUserMain";
-import ShowPost from "./ShowPost";
-import WritePost from "./WritePost";
+import OrderMain from "./OrderMain";
+import Cocktionary from "./Cocktionary";
+import Community from "./Community";
 
 const API_URL = "https://reactapitest.pythonanywhere.com/api/";
 function App() {
@@ -28,10 +28,12 @@ function App() {
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Main>
             <Routes>
-              <Route exact path="/1" element={<PageUserMain apiUrl={API_URL} />}></Route>
-              <Route exact path="/2" element={<PageUserMain apiUrl={API_URL} />}></Route>
-              <Route path="/write" element={<WritePost apiUrl={API_URL} />}></Route>
-              <Route path="/post/:postID" element={<ShowPost apiUrl={API_URL} />}></Route>
+              <Route exact path="/main" element={<PageUserMain />}></Route>
+              <Route path="/order" element={<OrderMain />}></Route>
+              <Route path="/cocktionary" element={<Cocktionary />}></Route>
+              <Route path="/community" element={<Community />}></Route>
+              {/* <Route path="/write" element={<WritePost />}></Route> */}
+              {/* <Route path="/post/:postID" element={<ShowPost />}></Route> */}
             </Routes>
           </Main>
           <Footer />
