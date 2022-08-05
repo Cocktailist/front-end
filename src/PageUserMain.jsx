@@ -17,11 +17,8 @@ const PageUserMain = ({ apiUrl }) => {
   const cocktailbarTags = ["관람차뷰", "데이트코스", "시그니처칵테일"];
   const trendingPosts = [
     { id: 1, userImg: "", userName: "피에르앙리", board: "아이디어 게시판", date: "2022-07-22", title: "이거 맛없으면 500만원", content: "오늘은 오랜만에 칵테일을 주조해보았다. 친구가 저번에 먹다 남은 보드카를 활용해 만들었다." },
-    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
-    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
-    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
-    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
-    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 진토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
+    { id: 2, userImg: "", userName: "캣스터냇츠", board: "나눔 게시판", date: "2022-07-23", title: "진로 토닉 선착순 3명", content: "선착순 3명이다. 010 - 4794- 6783 문자 먼저 오는 순으로 받겠다." },
+    { id: 3, userImg: "", userName: "낫파운드군", board: "자유 게시판", date: "2022-07-23", title: "피나콜라다 vs 모히또", content: "초보자가 즐기기 가장 쉬운 칵테일 골라주세요!! ㅎ" },
   ];
 
   // TODO: LocaionBox를 styledComponents 에서 개발이 가능한지 모르겠다.

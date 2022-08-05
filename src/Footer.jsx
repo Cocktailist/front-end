@@ -11,10 +11,18 @@ import nav_i04 from "./static/nav_i04.png";
 function Footer() {
   return (
     <FooterDiv>
-      <FooterIcon src={nav_i01} alt="icon"></FooterIcon>
-      <FooterIcon src={nav_i02} alt="icon"></FooterIcon>
-      <FooterIcon src={nav_i03} alt="icon"></FooterIcon>
-      <FooterIcon src={nav_i04} alt="icon"></FooterIcon>
+      <Link to="/cocktionary">
+        <FooterIcon src={nav_i01} alt="icon"></FooterIcon>
+      </Link>
+      <Link to="/cocktionary">
+        <FooterIcon src={nav_i02} alt="icon"></FooterIcon>
+      </Link>
+      <Link to="/cocktionary">
+        <FooterIcon src={nav_i03} alt="icon"></FooterIcon>
+      </Link>
+      <Link to="/cocktionary">
+        <FooterIcon src={nav_i04} alt="icon"></FooterIcon>
+      </Link>
     </FooterDiv>
   );
 }

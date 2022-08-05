@@ -1,4 +1,5 @@
 import { HeaderContent, CrossLine, HeaderDiv, TitleLogo, TitleDiv } from "./styledComponent";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +14,9 @@ function Header({ darkMode, setDarkMode }) {
   return (
     <HeaderDiv>
       <HeaderContent>
-        <TitleLogo src={IconBack}></TitleLogo>
+        <a href="http://localhost:3001/roro/order_mojito.html">
+          <TitleLogo src={IconBack}></TitleLogo>
+        </a>
         <TitleDiv>CocktailBar</TitleDiv>
         <div></div>
       </HeaderContent>
